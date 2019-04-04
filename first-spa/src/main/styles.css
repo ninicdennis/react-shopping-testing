@@ -1,0 +1,8 @@
+.mainBackground {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    background-color: grey;
+    width:100%;
+    height:100%;
+}

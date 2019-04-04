@@ -1,0 +1,6 @@
+.footerBackground {
+    display: grid;
+    grid-template-rows: 70px;
+    grid-template-columns: auto;
+    background-color:darkslategray;
+}
