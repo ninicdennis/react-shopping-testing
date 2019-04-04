@@ -9,7 +9,13 @@ class Main extends Component {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lobortis turpis in hendrerit ornare. Nam viverra quam quis scelerisque consectetur. Donec et dui at libero eleifend auctor. Aliquam vestibulum ex sed velit rutrum, ut convallis nunc volutpat. Phasellus a euismod augue. Etiam cursus metus sed est gravida, in pharetra neque viverra. Phasellus sed faucibus leo. Sed dictum ligula eros, eget fermentum leo tempor mattis. Sed ac magna quis odio bibendum pretium. 
             </div>
             <div className = "rightBar" id='centerLine'>
-            Login
+            <form>
+                <p>Username:</p>
+                <input type ='text' name = 'username'></input>
+                <p>Password:</p>
+                <input type ='text' name = 'password'></input>
+            </form> 
+            <button>Go!</button>
             </div>
             </body>
         );

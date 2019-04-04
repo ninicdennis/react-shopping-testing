@@ -22,7 +22,7 @@
 }
 
 .shopMain {
-    flex-grow: 3;
+    flex-grow: 1;
     flex-direction: column;
     flex-wrap: wrap;
 }
