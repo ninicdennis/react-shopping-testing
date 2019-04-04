@@ -1,8 +1,28 @@
 .mainBackground {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    background-color: grey;
+    grid-template-columns: auto 700px auto 700px auto;
+    grid-template-rows: 100px auto 100px;
+    background-color: darkgray;
     width:100%;
     height:100%;
+}
+
+.leftBar {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: #515151;
+    position: sticky;
+
+}
+
+.rightBar {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-color: #515151;
+}
+
+#centerLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

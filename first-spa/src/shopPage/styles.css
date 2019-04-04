@@ -1,0 +1,15 @@
+.shopFlex{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.shopHeader{
+    background-color: gray;
+    flex-grow: 1;
+}
+
+.shopMain{
+    flex-grow: 3;
+}

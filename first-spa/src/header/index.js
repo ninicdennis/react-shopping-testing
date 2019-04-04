@@ -5,7 +5,9 @@ class Header extends Component {
   render() {
     return (
         <header className = "headerBackground">
-            This is the header.
+            <div className = "leftSide">
+            this is the header.
+            </div>
         </header>
     );
   }
