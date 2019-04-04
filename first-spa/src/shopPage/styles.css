@@ -10,6 +10,19 @@
     flex-grow: 1;
 }
 
-.shopMain{
+.shopSideBar{
     flex-grow: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 150px;
+
+}
+
+.shopMain {
+    flex-grow: 3;
+    flex-direction: column;
+    flex-wrap: wrap;
 }

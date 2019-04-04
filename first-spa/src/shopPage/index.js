@@ -6,7 +6,8 @@ class shopPage extends Component {
     return (
         <body className ='shopFlex'>
             <div className = 'shopHeader'> This is the header.</div>
-            <div className ='shopMain'> This is the main body.</div>
+            <div className ='shopSideBar'> This is the side bar.</div>
+            <div className = 'shopMain'> This is the Main Body. </div>
         </body>
     );
   }
