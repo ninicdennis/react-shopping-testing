@@ -5,9 +5,16 @@ import './styles.css'
 class ShopPage extends Component {
   render() {
     return (
-        <body className ='shopFlex'>
-            <FrontHeader />
-            <div className = 'shopMain'> This is the Main Body. </div>
+        <body>
+          <FrontHeader />
+            <div className ='shop-page'>
+              <div className ='sideMenu'>
+            owo
+              </div>
+              <div className ='shopMain'>
+              whats this
+              </div>
+            </div>
         </body>
     );
   }

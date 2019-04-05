@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <FrontPage />
+        <ShopPage />
       </div>
     );
   }
@@ -17,3 +17,4 @@ export default App;
 
 
 //<ShopPage />
+//<FrontPage />

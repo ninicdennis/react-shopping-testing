@@ -1,11 +1,16 @@
-.shopFlex{
-    min-height: 100vh;
+.shop-page {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
 }
 
-.shopMain {
-    flex-grow: 1;
-    flex-direction: column;
-    flex-wrap: wrap;
+.shopMenu {
+    flex-grow: 2;
+    margin: auto;
+
 }
+
+.shopMain{
+    flex-grow: 1;
+}
+
