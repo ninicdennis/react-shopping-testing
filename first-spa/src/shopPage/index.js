@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
+import FrontHeader from '../mainpage/header/index'
 import './styles.css'
 
-class shopPage extends Component {
+class ShopPage extends Component {
   render() {
     return (
         <body className ='shopFlex'>
-            <div className = 'shopHeader'> This is the header.</div>
-            <div className ='shopSideBar'> This is the side bar.</div>
+            <FrontHeader />
             <div className = 'shopMain'> This is the Main Body. </div>
         </body>
     );
   }
 }
 
-export default shopPage;
+export default ShopPage;
