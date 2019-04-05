@@ -5,7 +5,8 @@ class Footer extends Component {
   render() {
     return (
         <footer className = 'footerBackground'>
-            This is the footer.
+        <div className = 'footerCenter'>
+        This is the footer.</div>
         </footer>
     );
   }

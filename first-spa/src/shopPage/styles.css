@@ -2,23 +2,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
-}
-
-.shopHeader{
-    background-color: gray;
-    flex-grow: 1;
-}
-
-.shopSideBar{
-    flex-grow: 3;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 300px;
-    width: 150px;
-
 }
 
 .shopMain {

@@ -4,3 +4,11 @@
     grid-template-columns: auto;
     background-color: #474747;
 }
+
+.footerCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}

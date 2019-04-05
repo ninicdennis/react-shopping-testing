@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Input, Header} from 'semantic-ui-react'
 import './styles.css';
 
 class FrontHeader extends Component {
@@ -6,7 +7,11 @@ class FrontHeader extends Component {
     return (
         <header className = "headerBackground">
             <div className = "leftSide">
-            this is the header.
+            <Header as='h2' content='Bamazon' subheader='We sell stuff.'
+  />
+            <div>
+            <Input icon='search' placeholder='Search...' />
+            </div>
             </div>
         </header>
     );

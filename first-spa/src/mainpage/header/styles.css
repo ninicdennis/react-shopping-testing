@@ -7,7 +7,11 @@
 
 .leftSide{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
     align-items: center;
 
 }
