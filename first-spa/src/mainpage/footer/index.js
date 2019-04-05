@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Icon } from 'semantic-ui-react'
 import './styles.css';
 
 class Footer extends Component {
@@ -6,7 +7,8 @@ class Footer extends Component {
     return (
         <footer className = 'footerBackground'>
         <div className = 'footerCenter'>
-        This is the footer.</div>
+        <Icon name='github' size='large' />
+        Github.</div>
         </footer>
     );
   }
