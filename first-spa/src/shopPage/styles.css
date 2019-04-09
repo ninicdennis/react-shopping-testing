@@ -8,7 +8,22 @@
     display:flex;
     flex: auto;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
     background-color: #474747;
+    border-top: solid 5px black;
+    margin-bottom: 5px;
     
+}
+
+.itemBoxes {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex:auto;
+    flex: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color: blue;
+    border: dotted;
 }

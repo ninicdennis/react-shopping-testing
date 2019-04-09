@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FrontHeader from '../mainpage/header/index'
+import { Header } from 'semantic-ui-react'
 import './styles.css'
 
 class ShopPage extends Component {
@@ -9,17 +10,22 @@ class ShopPage extends Component {
           <FrontHeader />
             <div className ='shop-page'>
             <div className = 'sidebar-menu'>
-              Side Menu
+              <Header as='h3'>Sidebar Menu</Header>
               <div>
-              box1
+                Link1
               </div>
               <div>
-                box2
+                Link2
               </div>
             </div>
             <div>
-              Shop Menu
+              <div className='itemBoxes'>
+              Item
             </div>
+              <div className='itemBoxes'>
+              Item2
+              </div>
+              </div>
               </div>
           </body>
     )}
