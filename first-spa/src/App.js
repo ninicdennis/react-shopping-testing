@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ShopPage from './shopPage'
 import FrontPage from './mainpage/index'
+import ShopItem from './ShopItem/index'
 
 class App extends Component {
   constructor(props) {
@@ -26,7 +27,11 @@ class App extends Component {
         </label>
         <label>
         <input type="radio" name="pageChange" value="Shop" onClick={this.updatePage} />
-        Shop Page
+        ShopItem
+        </label>
+        <label>
+        <input type="radio" name="pageChange" value="ItemPage" onClick={this.updatePage} /> 
+        Item Page
         </label>
         <FrontPage /></div>
       case 'Shop':
@@ -39,7 +44,27 @@ class App extends Component {
       <input type="radio" name="pageChange" value="Shop" onClick={this.updatePage} />
       Shop Page
       </label>
+      <label>
+        <input type="radio" name="pageChange" value="ItemPage" onClick={this.updatePage} /> 
+        </label>
+        Item Page
         <ShopPage /></div>
+        
+        case 'ItemPage':
+        return <div>
+        <label>
+        <input type="radio" name="pageChange" value="Front" onClick={this.updatePage} />
+        Front Page
+        </label>
+        <label>
+        <input type="radio" name="pageChange" value="Shop" onClick={this.updatePage} />
+        Shop Page
+        </label>
+        <label>
+        <input type="radio" name="pageChange" value="ItemPage" onClick={this.updatePage} /> 
+        Item Page
+        </label>
+          <ShopItem /></div>
       default:
       return <div>Page broke</div>
     }
