@@ -1,16 +1,14 @@
 .shop-page {
-    display: flex;
-    flex-direction: row;
-
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 91vh;
 }
 
-.shopMenu {
-    flex-grow: 2;
-    margin: auto;
-
+.sidebar-menu {
+    display:flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #474747;
+    
 }
-
-.shopMain{
-    flex-grow: 1;
-}
-

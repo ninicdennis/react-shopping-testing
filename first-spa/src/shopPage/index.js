@@ -8,16 +8,21 @@ class ShopPage extends Component {
         <body>
           <FrontHeader />
             <div className ='shop-page'>
-              <div className ='sideMenu'>
-            owo
+            <div className = 'sidebar-menu'>
+              Side Menu
+              <div>
+              box1
               </div>
-              <div className ='shopMain'>
-              whats this
+              <div>
+                box2
               </div>
             </div>
-        </body>
-    );
-  }
+            <div>
+              Shop Menu
+            </div>
+              </div>
+          </body>
+    )}
 }
 
 export default ShopPage;
