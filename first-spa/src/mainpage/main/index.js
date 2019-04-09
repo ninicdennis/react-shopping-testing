@@ -15,15 +15,14 @@ class Main extends Component {
                  Sed ac magna quis odio bibendum pretium. </p>
             </div>
             <div className = "rightBar" id='centerLine'>
-            <Header as='h1'>Login:</Header>
-            <form id='centerLine'>
-                <Input focus id='textSpacing' placeholder = "Username" />
-                <Input focus id='textSpacing' placeholder = "Password" />
-                <Button id='textSpacing'>Go!</Button>
-            </form> 
-
+                <Header as='h1'>Login:</Header>
+                <form id='centerLine'>
+                    <Input focus id='textSpacing' placeholder = "Username" />
+                    <Input focus id='textSpacing' placeholder = "Password" />
+                    <Button id='textSpacing'>Go!</Button>
+                </form> 
             </div>
-            </body>
+        </body>
         );
     }
 }

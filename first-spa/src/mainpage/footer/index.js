@@ -6,9 +6,10 @@ class Footer extends Component {
   render() {
     return (
         <footer className = 'footerBackground'>
-        <div className = 'footerCenter'>
-        <Icon name='github' size='large' />
-        Github.</div>
+          <div className = 'footerCenter'>
+            <Icon name='github' size='large' />
+              <a href="https://www.github.com/pupper-bot">Github</a>
+          </div>
         </footer>
     );
   }

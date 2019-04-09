@@ -1,15 +1,48 @@
 import React, { Component } from 'react';
-import ShopPage from './shopPage'
 import './App.css';
+import ShopPage from './shopPage'
 import FrontPage from './mainpage/index'
 
 class App extends Component {
+  constructor(props) {
+    super(props); 
+      this.state = {
+        page:'Front'
+      }
+    };
+
+    updatePage = (event) => {
+      event.preventDefault()
+      this.setState({page:event.target.value})
+      console.log("Click has been made.")
+    }
   render() {
-    return (
-      <div>
-        <FrontPage />
-      </div>
-    );
+    switch(this.state.page) {
+      case 'Front':
+      return <div>
+        <label>
+        <input type="radio" name="pageChange" value="Front" onClick={this.updatePage} />
+        Front Page
+        </label>
+        <label>
+        <input type="radio" name="pageChange" value="Shop" onClick={this.updatePage} />
+        Shop Page
+        </label>
+        <FrontPage /></div>
+      case 'Shop':
+      return <div>
+      <label>
+      <input type="radio" name="pageChange" value="Front" onClick={this.updatePage} />
+      Front Page
+      </label>
+      <label>
+      <input type="radio" name="pageChange" value="Shop" onClick={this.updatePage} />
+      Shop Page
+      </label>
+        <ShopPage /></div>
+      default:
+      return <div>Page broke</div>
+    }
   }
 }
 
