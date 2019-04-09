@@ -27,7 +27,7 @@ class App extends Component {
         </label>
         <label>
         <input type="radio" name="pageChange" value="Shop" onClick={this.updatePage} />
-        ShopItem
+        Shop Page
         </label>
         <label>
         <input type="radio" name="pageChange" value="ItemPage" onClick={this.updatePage} /> 
