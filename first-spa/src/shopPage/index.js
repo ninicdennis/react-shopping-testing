@@ -18,13 +18,14 @@ class ShopPage extends Component {
                 Link2
               </div>
             </div>
-            <div>
+            <div className = 'main-menu'>
               <div className='itemBoxes'>
               Item
             </div>
               <div className='itemBoxes'>
               Item2
               </div>
+              <div className='itemBoxes'>item3</div>
               </div>
               </div>
           </body>

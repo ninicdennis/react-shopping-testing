@@ -16,14 +16,21 @@
     
 }
 
+.main-menu{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
 .itemBoxes {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     flex:auto;
     flex: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
     background-color: blue;
-    border: dotted;
+    border: solid;
+    padding: 10px;
 }
