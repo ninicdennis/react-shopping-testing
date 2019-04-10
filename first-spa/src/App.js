@@ -35,15 +35,15 @@ class App extends Component {
      <div>
     <label>
     <input type="radio" name="pageChange" value="Front" onClick={this.updatePage} />
-    Front Page
+    _Front Page_
     </label>
     <label>
     <input type="radio" name="pageChange" value="Shop" onClick={this.updatePage} />
-    Shop Page
+    _Shop Page_
     </label>
     <label>
     <input type="radio" name="pageChange" value="ItemPage" onClick={this.updatePage} /> 
-    Item Page
+    _Item Page_
     </label>
     <MainMain />
     {this.renderMainContent()}
