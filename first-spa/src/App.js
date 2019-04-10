@@ -3,6 +3,7 @@ import './App.css';
 import ShopPage from './shopPage'
 import FrontPage from './mainpage/index'
 import ShopItem from './ShopItem/index'
+import MainMain from './mainpage/header/index'
 
 class App extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ class App extends Component {
     <input type="radio" name="pageChange" value="ItemPage" onClick={this.updatePage} /> 
     Item Page
     </label>
+    <MainMain />
     {this.renderMainContent()}
     </div>
     );

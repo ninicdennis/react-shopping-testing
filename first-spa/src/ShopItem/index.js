@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import NormalHead from '../mainpage/header/index'
 import './styles.css';
 import { Image, Header } from 'semantic-ui-react'
 
@@ -7,7 +6,6 @@ class ShopItem extends Component {
   render() {
     return(
     <div>
-      <NormalHead />
       <div className='item-body'>
       <div className='itemImage'>
         <Image src={require('../images/image.jpg')} alt = 'sample' size='large'/>
