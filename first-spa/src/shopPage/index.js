@@ -19,7 +19,7 @@ class ShopPage extends Component {
           </div>)
       case false:
         return (
-          <div>
+          <div className = 'closed-state'>
            <input type = 'button' value='open' onClick ={this.updateSideBar} />
           </div>
         )
