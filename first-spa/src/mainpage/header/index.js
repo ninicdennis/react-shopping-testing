@@ -10,7 +10,7 @@ class FrontHeader extends Component {
           <div className = "leftSide">
             <Header as='h2' content='Bamazon' subheader='We sell stuff.' />
           <div>
-            <div>Logged In</div>
+            <div>Logged In |{this.props.cartCount}|</div>
               <Input icon='search' placeholder='Search...' />
             </div>
           </div>

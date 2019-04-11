@@ -9,18 +9,30 @@ class App extends Component {
   constructor(props) {
     super(props); 
       this.state = {
-        page:'Front'
+        page:'Front',
+        itemInCart:0,
+
       }
     };
+    addItem = (event) => {
+      event.preventDefault()
+      this.setState({itemInCart: this.state.itemInCart+1 })
+    }
+    removeItem = (event) => {
+      event.preventDefault()
+      let newTot = this.state.itemInCart -1
+      newTot = newTot < 0 ? 0 : newTot
+      this.setState({itemInCart: newTot});
+    }
 
     renderMainContent =() => {
       switch(this.state.page) {
         case 'Front':
-          return <FrontPage userLog = 'hello' />;
+          return <FrontPage cartCount = {this.state.cartCount} />;
         case 'Shop':
-          return <ShopPage />
+          return <ShopPage cartCount = {this.state.itemInCart} removeItem={this.removeItem} addItem={this.addItem} />
         case 'ItemPage':
-          return <ShopItem />
+          return <ShopItem cartCount = {this.state.cartCount} />
         default:
         return <div>Page Broke</div>;
       }
@@ -45,7 +57,7 @@ class App extends Component {
     <input type="radio" name="pageChange" value="ItemPage" onClick={this.updatePage} /> 
     _Item Page_
     </label>
-    <MainMain userLog = {this.state.page !== 'Front'}/>
+    <MainMain cartCount = {this.state.itemInCart} userLog = {this.state.page !== 'Front'} removeItem={this.removeItem} addItem={this.addItem}/>
     {this.renderMainContent()}
     </div>
     );

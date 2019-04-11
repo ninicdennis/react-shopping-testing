@@ -6,7 +6,7 @@ class ShopPage extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        sideBarStatus: true
+        sideBarStatus: true,
       }
     }
 
@@ -48,6 +48,10 @@ class ShopPage extends Component {
             <div className ='shop-page'>
             {this.renderSideBar()}
             <div className = 'main-menu'>
+            <div>
+              <input type ='button' value ='+' onClick={this.props.addItem}/>
+              <input type ='button' value ='-' onClick={this.props.removeItem}/>
+            </div>
               <div className='itemBoxes'>Item1</div>
               <div className='itemBoxes'>Item2</div>
               <div className='itemBoxes'>item3</div>
