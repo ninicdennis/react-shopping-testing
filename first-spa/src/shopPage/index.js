@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react'
+import { Header, Button, Icon} from 'semantic-ui-react'
 import './styles.css'
 
 class ShopPage extends Component {
@@ -14,19 +14,25 @@ class ShopPage extends Component {
     switch (this.state.sideBarStatus) {
       case true:
         return (<div className = 'sidebar-menu'>
-        <Header as='h3'>Sidebar Menu</Header>
-        <input type = 'button' value ='close' onClick ={this.updateSideBar} />
-          </div>)
+        <Button icon value='close' onClick ={this.updateSideBar}>
+          <Icon name='sidebar' />
+        </Button>
+        <Header as='h2'>Sidebar Menu</Header>
+      </div>)
       case false:
         return (
           <div className = 'closed-state'>
-           <input type = 'button' value='open' onClick ={this.updateSideBar} />
-          </div>
+        <Button icon value='open' onClick ={this.updateSideBar}>
+          <Icon name='sidebar' />
+        </Button>
+      </div>
         )
       default:
         return (<div className = 'sidebar-menu'>
-        <Header as='h3'>Sidebar Menu</Header>
-        <input type = 'button' value ='open' onClick ={this.updateSideBar} />
+        <Button icon calue='close' onClick ={this.updateSideBar}>
+          <Icon name='sidebar' />
+        </Button>
+        <Header as='h2'>Sidebar Menu</Header>
       </div>)
     }
   }

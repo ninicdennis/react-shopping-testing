@@ -16,7 +16,7 @@ class App extends Component {
     renderMainContent =() => {
       switch(this.state.page) {
         case 'Front':
-          return <FrontPage />
+          return <FrontPage userLog = 'hello' />;
         case 'Shop':
           return <ShopPage />
         case 'ItemPage':
@@ -45,7 +45,7 @@ class App extends Component {
     <input type="radio" name="pageChange" value="ItemPage" onClick={this.updatePage} /> 
     _Item Page_
     </label>
-    <MainMain />
+    <MainMain userLog = {this.state.page !== 'Front'}/>
     {this.renderMainContent()}
     </div>
     );
