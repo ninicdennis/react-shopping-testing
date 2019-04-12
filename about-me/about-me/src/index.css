@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.about {
+display:flex;
+background-color: #585858;
+border: solid 3px #474747;
+align-items: center;
+justify-content: center;
+height: 300px;
+}
+
+.intro {
+background-color:#808080;
+flex-grow: 1;
+height: 560px;
+width: 200px;
+border: solid 3px #474747;
+border-spacing: 5px;
+margin: 10px;
+padding: 10px;
+}
+
+.helio {
+background-color: #808080;
+flex-grow: 1;
+height: 560px;
+width: 200px;
+border: solid 3px #474747;
+border-spacing: 5px;
+margin: 10px;
+padding: 10px;
+
+}
+
+.intrests {
+background-color: #808080;
+flex-grow: 1;
+height: 560px;
+width: 200px;
+border: solid 3px #474747;
+border-spacing: 5px;
+margin: 10px;
+padding: 10px;
+
+}
